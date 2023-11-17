@@ -1,0 +1,230 @@
+.container{
+	margin : 0px 150px;
+	display: flex;
+	align-items: center;
+/*	justify-content: space-around;*/
+}
+
+body {
+	margin: 0;
+}
+/* Полезные селекторы:
+	transition: color 0.2s linear; плавно менять цвет
+	.class:hover {
+		color : red;  при наведении менять что-то
+	}
+	padding - внутренние отступы
+ */
+.header {
+	background: rgb(6, 62, 127);
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	transition: inherit;
+
+}
+
+.nav > a {
+	text-decoration: none;
+	color: white;
+	font-weight: 800;
+	font-size: 23px;
+	margin-right: 25px;
+}
+
+.brand {
+	font-size: 20px;
+	font-family: sans-serif;
+/*	display: inline;*/
+	margin-top: 0;
+	font-weight: 800;
+	margin-bottom: 10px;
+	color: rgb(220, 220, 255, 1.0);
+}
+
+.header-logo > img {
+	display: inline;
+	width: 100px;
+}
+
+.nav > a:hover{
+	color: rgb(210, 130, 130);
+	transition: color 0.18s linear;
+}
+
+.nav {
+	padding-right: 250px;
+	padding-left: 50px;
+}
+
+.social-img
+{
+	width: 38px;
+	margin-right: 20px;
+}
+
+.social
+{
+	font-size: 20px;
+	font-weight: 400;
+	font-family: sans-serif;
+	color: white;
+	float: right;
+}
+
+.social > p {
+	margin-top: 7px;
+}
+
+.content 
+{
+	position: relative;
+}
+
+.content-img {
+	float: right;
+	max-width: 40%;
+	min-width: 40%;
+	margin-top: 7%;
+	height: 480px;
+	background-color:#000;
+	display: inline;
+	background-repeat: no-repeat;
+}
+
+.info{
+	max-width: 60%;
+	min-width: 60%;
+	margin-top: 7%;
+	height: 480px;
+	position: absolute;
+	background-color: rgb(6, 62, 162);
+}
+
+.info-remont {
+	font-size: 40px;
+	padding-left: 30px;
+	color: white;
+	font-weight: 1000;
+}
+
+.brand-info
+{
+	color: white;
+	margin-left: 60px;
+	font-size: 30px;
+	font-family: sans-serif;
+	margin-bottom: 30px;
+	color: rgb(190, 250, 250, 1.0);
+}
+
+.brand-infoli
+{
+	padding-top: 15px;
+}
+
+.address {
+	color: white;
+	margin-left: 30px;
+	margin-bottom: 5px;
+	margin-top: 70px;
+	font-size: 27px;
+
+}
+
+.button
+{
+	font-size: 26px;
+	background-color: #FF7400;
+	padding: 10px 23px;
+	padding-bottom: 0px;
+	margin-left: 30px;
+	width: 380px;
+}
+
+.btn-text{
+	font-family: !important;
+	color: #fff;
+	font-weight: 700;
+	text-align: center;
+	position: absolute;
+	text-decoration: none;
+}
+
+.btn-img
+{
+	padding-left: 320px;
+	width: 40px;
+	text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;/*обнуление отступов*/
+    padding: 0;/*обнуление полей*/
+    box-sizing: border-box;/*метод расчета размеров бокса*/
+    font-family: 'Poppins', sans-serif;/*название шрифта*/
+}
+
+.phone
+{
+	color: white;
+	margin-left: 30px;
+	margin-top: 2px;
+	margin-bottom: 5px;
+	font-size: 27px;
+	font-weight: 900;
+}
+
+footer{
+    width: 100%;/*на всю ширину*/
+    padding: 20px 50px;/*поля для контента*/
+    background: #3586ff;/*цвет футера*/
+   
+    justify-content: center;/*в центре по горизонтали*/
+   	margin-top: 200px;
+    flex-direction: column;
+    position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 80px;
+}
+.social,
+.menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0;
+    flex-wrap: wrap;/*разрешен перенос на новую строку*/
+}
+.social li,
+.menu li{
+    list-style: none;/*удалить черные маркеры*/
+}
+.social li a {
+    font-size: 2em;/*размер иконок*/
+    color: #fff;/*цвет иконок*/
+    margin: 0 30px;
+    display: inline-block;/*отображать как строчно-блочный элемент*/
+    transition: 0.5s;/*плавный переход*/
+}
+.menu li a {
+    font-size: 1.2em;/*размер ссылок меню*/
+    color: #fff;/*цвет ссылок меню*/
+    opacity: 0.75;/*значение прозрачности*/
+    margin: 0 15px;
+    text-decoration: none;/*ссылка без подчеркивания*/
+    display: inline-block;
+}
+.menu li a:hover {
+    opacity: 1;
+}
+footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
